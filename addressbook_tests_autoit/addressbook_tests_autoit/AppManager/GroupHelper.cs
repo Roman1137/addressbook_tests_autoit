@@ -45,7 +45,7 @@ namespace addressbook_tests_autoit
         private void OpenGroupsDialogue()
         {
             aux.ControlClick(WINTITLE, "", "WindowsForms10.BUTTON.app.0.2c908d512");
-            aux.WinWait(GROUPWINTITLE);
+            WaitUntilPageIsReadyForUsage(WINTITLE);
         }
 
         public List<GroupData> VerifyTheGroupExists(int index, GroupData newGroup)
